@@ -23,7 +23,6 @@ class CounterPage extends StatelessWidget {
         body: Center(
           child: BlocBuilder<CounterBloc, CounterState>(
             builder: (context, state) {
-              final cBloc = BlocProvider.of<CounterBloc>(context);
               return Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
