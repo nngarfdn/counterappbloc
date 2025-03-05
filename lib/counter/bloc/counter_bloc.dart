@@ -15,4 +15,9 @@ class CounterBloc extends Bloc<CunterEvent,CounterState>{
       emit(CounterState(0));
     });
   }
+
+  @override
+  Future<void> close() {
+    return super.close();
+  }
 }
